@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import "compass";
+
+@import url(http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700);
+
+/* variables and mixins */
+
+// _normalize.scss
+@import "normalize";
+
+/////// stuff for print and screen
+
+body {
+  font-family: "Alegreya", Georgia, serif;
+}

@@ -1,0 +1,232 @@
+@charset "UTF-8";
+@import "base";
+
+// ==============
+// DIMENSIONS
+// ==============
+$break1: 1100px;
+$break2: 800px;
+$break3: 500px;
+
+///////// DECORATION //////////////////
+///////// DECORATION //////////////////
+///////// DECORATION //////////////////
+///////// DECORATION //////////////////
+///////// DECORATION //////////////////
+$flair: #b32919;
+$dark: #02134d;
+$light: #7E9ED9;
+
+header {
+  // background: $dark;
+  min-height: 600px;
+  background: url(../img/stop.jpg) no-repeat center top scroll;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  border-top: .2em solid $flair;
+  border-bottom: .2em solid $flair;
+  .headline {
+    background-color: rgba(white,.5);
+    color: $dark;
+  }
+  .slogan {
+    background-color: rgba($dark,.75);
+    color: white;
+  }
+//  @include text-shadow(lightsteelblue 1px 1px 0);
+}
+
+p,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+  color: $dark;
+}
+
+/////////////////////////// LAYOUT ///////////////////////////
+/////////////////////////// LAYOUT ///////////////////////////
+/////////////////////////// LAYOUT ///////////////////////////
+/////////////////////////// LAYOUT ///////////////////////////
+
+header {
+  padding-top: 2em;
+  text-align: left;
+}
+.headline {
+  line-height: 100%;
+  margin-bottom: 2em;
+}
+.headline,
+.slogan {
+  padding: 2% 20% 2% 10%;
+//  padding-left: 10%;
+  //padding-right: 20%;
+}
+
+main {
+  & > blockquote,
+  & > p,
+  & > h2,
+  & > h3,
+  & > h4,
+  & > h5,
+  & > h6 {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
+
+.twitter-tweet {
+  margin: 0;
+  padding-bottom: .75em;
+  color: white;
+  border-top: .1em solid white;
+  border-bottom: .1em solid white;
+    p {
+      color: white;
+    }
+}
+.twitter-tweet:nth-of-type(even) {
+  background-color: $dark;
+  a {
+    color: $flair;
+  }
+}
+.twitter-tweet:nth-of-type(odd) {
+  background-color: $flair;
+  a {
+    color: $dark;
+  }
+}
+
+///////// text //////
+///////// text //////
+///////// text //////
+///////// text //////
+
+body {
+  font-size: 16pt;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h2 {
+  font-size: 225%;
+}
+
+h3 {
+  font-size: 150%;
+}
+
+h4 {
+  font-size: 131.25%;
+}
+
+h5,
+h6 {
+  font-size: 112.5%;
+}
+
+img,
+object,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+//////////////////////// media queries ..................///////////////
+//////////////////////// media queries ..................///////////////
+//////////////////////// media queries ..................///////////////
+@media screen and (max-width: $break1) {
+  body {
+    font-size: 14pt;
+  }
+  h1 {
+    font-size: 225%;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+
+  h3 {
+    font-size: 131.25%;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 112.5%;
+  }
+}
+
+@media screen and (max-width: $break2) {
+header {
+  // background: $dark;
+  min-height: 0;
+}
+main {
+  & > blockquote,
+  & > p,
+  & > h2,
+  & > h3,
+  & > h4,
+  & > h5,
+  & > h6 {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+  body {
+    font-size: 12pt;
+  }
+  h1 {
+    font-size: 171.5%;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+
+  h3 {
+    font-size: 128.5%;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 114.3%;
+  }
+}
+
+@media screen and (max-width: $break3) {
+header {
+  background-size: auto;
+}
+.headline,
+.slogan {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+main {
+  & > blockquote,
+  & > p,
+  & > h2,
+  & > h3,
+  & > h4,
+  & > h5,
+  & > h6 {
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+  }
+}

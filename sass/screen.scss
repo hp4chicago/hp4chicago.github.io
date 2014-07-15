@@ -39,14 +39,16 @@ header {
 //  @include text-shadow(lightsteelblue 1px 1px 0);
 }
 
-p,
-h2,
-h3,
-h4,
-h5,
-h6,
-blockquote {
-  color: $dark;
+main {
+  p,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  blockquote {
+    color: $dark;
+  }
 }
 
 /////////////////////////// LAYOUT ///////////////////////////
@@ -102,6 +104,19 @@ main {
   background-color: $flair;
   a {
     color: $dark;
+  }
+}
+
+footer {
+  padding-right: 5%;
+  text-align: right;
+
+  background-color: $dark;
+  color: $light;
+  border-top: .2em solid $light;
+  border-bottom: .2em solid $light;
+  a {
+    color: $flair;
   }
 }
 

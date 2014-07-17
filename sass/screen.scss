@@ -17,6 +17,10 @@ $flair: #b32919;
 $dark: #02134d;
 $light: #7E9ED9;
 
+a {
+  color: $flair;
+}
+
 header {
   // background: $dark;
   min-height: 600px;
